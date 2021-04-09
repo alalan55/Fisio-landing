@@ -1,15 +1,16 @@
-header{
-   // border: 1px solid;
+header {
+    // border: 1px solid;
     width: 100%;
     height: 80px;
     position: fixed;
+    background: white;
 
-    nav{
-        padding: 0 .3em;
+    nav {
+        padding: 0 0.3em;
         display: flex;
         justify-content: space-between;
         align-items: center;
-       // border: 1px solid;
+        // border: 1px solid;
         max-width: 1000px;
         margin: 0 auto;
         height: 100%;
@@ -20,60 +21,65 @@ header{
             line-height: 70px;
             cursor: pointer;
             display: none;
+            i{
+                color: #151587;
+            }
         }
         #check {
             display: none;
         }
-        .logo{
+        .logo {
             font-weight: 900;
             color: #151587;
             font-size: 1.5rem;
+            cursor: pointer;
         }
 
-        ul{
-            li{
+        ul {
+            li {
                 list-style: none;
                 display: inline-block;
                 margin: 0 10px;
-               // border: 1px solid #151587;
-                padding: .2em .3rem;
-                transition: .2s ease-out;
+                // border: 1px solid #151587;
+                padding: 0.2em 0.3rem;
+                transition: 0.2s ease-out;
                 border-radius: 3px;
-                .active{
-                    padding: .2em .3rem;
-                    transition: .2s ease-out;
+                .active {
+                    padding: 0.2em 0.3rem;
+                    transition: 0.2s ease-out;
                     background: #151587;
                     border-radius: 3px;
                     color: white;
-                    a{
+                    a {
                         color: white;
                     }
                 }
-                a{
+                a {
                     text-decoration: none;
                 }
 
-                &:hover{
+                &:hover {
                     background: #151587;
                     color: white;
-                    a{
+                    a {
                         color: white;
                     }
                 }
-
             }
         }
-
-        
     }
 }
 
 @media screen and (max-width: 770px) {
+    header {
+        //    border: 1px solid;
+        padding: 0 2em;
+    }
     nav {
         .checkbtn {
             display: block !important;
         }
-
+        padding: 0 8em;
         ul {
             position: fixed;
             width: 100vw;
