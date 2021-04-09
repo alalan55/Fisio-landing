@@ -1,0 +1,104 @@
+header{
+   // border: 1px solid;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+
+    nav{
+        padding: 0 .3em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       // border: 1px solid;
+        max-width: 1000px;
+        margin: 0 auto;
+        height: 100%;
+        .checkbtn {
+            font-size: 30px;
+            color: black;
+            order: 3;
+            line-height: 70px;
+            cursor: pointer;
+            display: none;
+        }
+        #check {
+            display: none;
+        }
+        .logo{
+            font-weight: 900;
+            color: #151587;
+            font-size: 1.5rem;
+        }
+
+        ul{
+            li{
+                list-style: none;
+                display: inline-block;
+                margin: 0 10px;
+               // border: 1px solid #151587;
+                padding: .2em .3rem;
+                transition: .2s ease-out;
+                border-radius: 3px;
+                .active{
+                    padding: .2em .3rem;
+                    transition: .2s ease-out;
+                    background: #151587;
+                    border-radius: 3px;
+                    color: white;
+                    a{
+                        color: white;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                }
+
+                &:hover{
+                    background: #151587;
+                    color: white;
+                    a{
+                        color: white;
+                    }
+                }
+
+            }
+        }
+
+        
+    }
+}
+
+@media screen and (max-width: 770px) {
+    nav {
+        .checkbtn {
+            display: block !important;
+        }
+
+        ul {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(#000000, 0.9);
+            top: 70px;
+            left: 100%;
+            text-align: center;
+            transition: all 0.5s;
+            backdrop-filter: blur(0.6px);
+
+            li {
+                //    margin-top: 5%;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                a {
+                    //    border: 10px solid yellow;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        #check:checked ~ ul {
+            left: 0;
+        }
+    }
+}
