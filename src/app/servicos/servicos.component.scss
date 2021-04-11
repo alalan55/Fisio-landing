@@ -1,0 +1,125 @@
+.wrapper{
+   // height: 100vh;
+     display: flex;
+     background: #ffffff;
+     .conteudo-servicos{
+         display: flex;
+         width: 100%;
+         height: 100%;
+         justify-content: center;
+         align-items: center;
+         max-width: 1000px;
+       //  padding: 3em 0.2em  0 0.2em;
+         margin: 90px auto;
+       //  border: 1px solid red;
+         flex-direction: column;
+
+
+         &>div{
+          // border: 1px solid;
+             width: 100%;
+             height: 100%;
+             padding: 4em .3em;
+         }
+         .conteudo--topo{
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+
+             .title{
+                color: #151587;
+                padding-bottom: .9em;
+                text-align: center;
+             }
+             .text{
+                color: #151587;
+                text-align: justify;
+              //  border: 1px solid;
+                max-width: 85%;
+             }
+         }
+         .conteudo--img{
+            background: url(../../assets/3842690.jpg) no-repeat;
+             background-size: contain;
+             background-position: center;
+             object-fit: cover;
+             height: 35em;
+           //  background-attachment: fixed;
+            // border: 1px solid yellow;
+         }
+         .conteudo-cards{
+            display: flex;
+            flex-direction: column;
+                .title-conteudo-cards{
+                    text-align: center;
+                    margin-bottom: 1.5em;
+                    color: #151587;
+                }
+             .cards{
+             //  border: 1px solid;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 flex-wrap: wrap;
+                 margin: 0 auto;
+    
+                 .card-beneficio{
+                     flex: 0 17em;
+    
+                    // border: 1px solid;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     align-items: center;
+                     margin: 4px;
+                     padding: 1.5em;
+                     background: #5A5ABD;
+                     border-radius: 15px;
+                     height: 20em;
+                     .title-card{
+                         margin-bottom: 1em;
+                         font-weight: 600;
+                         color: white;
+                         text-align: center;
+    
+                     }
+                     .text-card{
+                        // max-width:95%;
+                         text-align: justify;
+                         margin-bottom: 1em;
+                         color: white;
+                     }
+                     .icon-card{
+                        font-size: 2rem;
+                        color: white;   
+                    }
+                 }
+             }
+         }
+
+
+     }
+    }
+
+    
+@media screen and(max-width: 770px) {
+  .conteudo--fim{
+    // //  border: 1px solid;
+    //   display: flex;
+    //   justify-content: flex-start;
+    //   align-items: flex-start !important;
+     // background-color: red !important;
+
+  }
+}
+
+// @media screen and(max-width: 600px) {
+//     .wrapper {
+//         height: auto;
+//         .conteudo-capa {
+//             //border: 1px solid red;
+//             flex-wrap: wrap;
+//         }
+//     }
+// }
