@@ -21,7 +21,7 @@ header {
             line-height: 70px;
             cursor: pointer;
             display: none;
-            i{
+            i {
                 color: #151587;
             }
         }
@@ -39,8 +39,7 @@ header {
             li {
                 list-style: none;
                 display: inline-block;
-                margin: 0 10px;
-                // border: 1px solid #151587;
+                margin: 0 20px;
                 padding: 0.2em 0.3rem;
                 transition: 0.2s ease-out;
                 border-radius: 3px;
@@ -72,14 +71,13 @@ header {
 
 @media screen and (max-width: 770px) {
     header {
-        //    border: 1px solid;
         padding: 0 2em;
     }
     nav {
         .checkbtn {
             display: block !important;
         }
-        padding: 0 8em;
+      //  padding: 0 8em;
         ul {
             position: fixed;
             width: 100vw;
@@ -87,24 +85,25 @@ header {
             background: rgba(#000000, 0.9);
             top: 70px;
             left: 100%;
+           // top: 100%;
+            // bottom: 100%;
             text-align: center;
             transition: all 0.5s;
             backdrop-filter: blur(0.6px);
 
             li {
-                //    margin-top: 5%;
                 display: flex !important;
                 align-items: center;
                 justify-content: center;
                 a {
-                    //    border: 10px solid yellow;
-                    font-size: 1.3rem;
+                    font-size: 1.3rem;      
                 }
             }
         }
-
         #check:checked ~ ul {
-            left: 0;
+          left: 0;
+           // top: 0;
+          // bottom: 0;
         }
     }
 }

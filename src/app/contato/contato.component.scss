@@ -1,0 +1,126 @@
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .conteudo-contato{
+        width: 100%;
+        padding: 7em 0.2em  .1em 0.2em;
+    //    border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+            .title-contato{
+                text-align: center;
+                color: #151587;
+                margin-bottom: 2em;
+            }
+        
+            .forms-contato{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+              //  border: 1px solid yellow;
+        
+                .lado-direito{
+                    width: 100%;
+                  //  border: 1px solid;
+                    margin: .5em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 1;
+                    
+                    img{
+                    // max-width: 100%;
+                    width: 100%;
+                    min-width: 18em;
+                    }
+                }
+                .lado-esquerdo{
+                   // border: 1px solid;
+                    width: 100%;
+                    margin: .5em;
+                    flex: 1;
+                    .inputs-contato{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        input{
+                            width: 100%;
+                            min-width: 100%;
+                            margin: 1em 0;
+                            padding: 1em;
+                            font-weight: 200;
+                            font-family: 'Montserrat';
+                            font-weight: 500;
+                            border: 1px solid #8888cc;
+                            // line-height: 1.2rem;
+                            color: #7474d8;
+
+                            &::placeholder{
+                                color: #8888cc;
+                            }
+                            &:focus{
+                                box-shadow: 0 0 0 0;
+                                border: 1px solid #8888cc;
+                                outline: 0;
+                            }
+                        }
+                        textarea{
+                            min-width: 100%;
+                            max-width: 100%;
+                            padding: 1em;
+                            font-family: 'Montserrat';
+                            font-weight: bold;
+                            border: 1px solid #8888cc;
+                            color: #7474d8;
+                            &:focus{
+                                box-shadow: 0 0 0 0;
+                                border: 1px solid #8888cc;
+                                outline: 0;
+                            }
+
+                        }
+                        .btn{
+                           // background: red;
+                           border: 1px solid #8888cc;
+                           background-color: white;
+                          color:  #8888cc;
+                          transition: .3s ease-in-out;
+
+                          &:hover{
+                              background: #8888cc ;
+                              color: white;
+                          }
+                        }
+                    }
+                    .wpp{
+                       // border: 1px solid;
+                        text-align: center;
+                        padding: .5em;
+                        a{
+
+                            text-decoration: none;
+                            color: #8888cc;
+                            transition: .3s ease-in-out;
+
+                            &:hover{
+                                color: #464685;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+
+}
+
+@media screen and (max-width: 606px){
+    .wrapper{
+     height: auto;
+    }
+}
